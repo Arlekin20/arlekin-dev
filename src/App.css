@@ -1,0 +1,19 @@
+body{margin:0 0 0 0}
+.hero-container {
+  margin-left: 20px;
+}
+.myName {
+  font-size: 75px;
+}
+.myDream {
+  font-size: 50px;
+}
+.myStack-container {
+  font-size: 37px;
+}
+.myPortfolio {
+  font-size: 40px;
+}
+.habr-text {
+  text-decoration: none;
+}
