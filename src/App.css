@@ -55,7 +55,9 @@
 }
 
 .blue-box:hover {
-  transform: translateX(20px) translateY(-5px);
+  transform:
+    translateX(20px)
+    translateY(-5px);
 
   background-color: #4c69ff;
 
@@ -151,7 +153,45 @@
 }
 
 .link-git:hover img {
-  transform: rotate(-8deg) scale(1.08);
+  transform:
+    rotate(-8deg)
+    scale(1.08);
+}
+
+
+/* GITHUB TEXT UNDERLINE */
+
+.gitName {
+  position: relative;
+
+  padding-bottom: 3px;
+}
+
+.gitName::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background-color: #ccf900;
+
+  transform: scaleX(0);
+
+  transform-origin: right;
+
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.link-git:hover .gitName::after {
+  transform: scaleX(1);
+
+  transform-origin: left;
 }
 
 
@@ -181,7 +221,9 @@
 }
 
 .about-me:hover {
-  transform: translateX(-18px) translateY(-5px);
+  transform:
+    translateX(-18px)
+    translateY(-5px);
 
   background-color: #464646;
 
@@ -272,7 +314,7 @@
     0 25px 50px #00000030;
 }
 
-.project-card-main:hover {
+.project-card-active:hover {
   box-shadow:
     10px 10px 0 #4260f6,
     0 25px 50px #00000030;
@@ -284,6 +326,12 @@
   color: #777;
 
   font-size: 22px;
+
+  transition: color 0.3s ease;
+}
+
+.project-card-active:hover .project-number {
+  color: #ccf900;
 }
 
 .project-name {
@@ -308,7 +356,12 @@
   color: #a8a8a8;
 
   font-size: 18px;
+
+  line-height: 1.35;
 }
+
+
+/* PROJECT LINKS */
 
 .project-links {
   margin-top: auto;
@@ -323,9 +376,36 @@
 }
 
 .project-links a {
+  position: relative;
+
+  display: inline-block;
+
+  padding-bottom: 4px;
+
   transition:
     color 0.3s ease,
     transform 0.3s ease;
+}
+
+.project-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #ccf900;
+
+  transform: scaleX(0);
+
+  transform-origin: right;
+
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .project-links a:hover {
@@ -334,12 +414,21 @@
   transform: translateX(4px);
 }
 
+.project-links a:hover::after {
+  transform: scaleX(1);
+
+  transform-origin: left;
+}
+
+
+/* COMING SOON */
+
 .project-card-soon {
-  opacity: 0.5;
+  opacity: 0.45;
 }
 
 .project-card-soon:hover {
-  opacity: 1;
+  opacity: 0.85;
 }
 
 

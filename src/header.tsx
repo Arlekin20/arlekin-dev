@@ -52,6 +52,7 @@ function Header() {
           href="https://hh.ru/resume/d25e4649ff108679c30039ed1f627a66633236?hhtmFrom=main"
           target="_blank"
           rel="noreferrer"
+          aria-label="HeadHunter"
         >
           <img
             src={hhLogo}
@@ -60,7 +61,7 @@ function Header() {
         </a>
 
         <a
-          className="link-habr link-button"
+          className="link-habr link-button link-underline"
           href="https://career.habr.com/arlekin20"
           target="_blank"
           rel="noreferrer"
@@ -71,8 +72,8 @@ function Header() {
         </a>
 
         <a
-          className="link-resume link-button"
-          href="https://hh.ru/resume/d25e4649ff108679c30039ed1f627a66633236"
+          className="link-resume link-button link-underline"
+          href="/resume.pdf"
           target="_blank"
           rel="noreferrer"
         >
@@ -82,7 +83,7 @@ function Header() {
         </a>
 
         <a
-          className="link-projects link-button"
+          className="link-projects link-button link-underline"
           href="#projects"
         >
           <div className="project-text">
@@ -102,7 +103,7 @@ function Header() {
           </div>
 
           <a
-            className="link-tg link-button"
+            className="link-tg link-button link-underline"
             href="https://t.me/arlekin_11"
             target="_blank"
             rel="noreferrer"
@@ -115,7 +116,7 @@ function Header() {
 
         <div className="phone-container">
           <a
-            className="link-number link-button"
+            className="link-number link-button link-underline"
             href={`tel:${phone}`}
             onClick={phoneClick}
           >

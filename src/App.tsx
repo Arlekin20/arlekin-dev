@@ -87,7 +87,9 @@ function App() {
           </div>
 
           <div className="projects-container">
-            <div className="project-card project-card-main">
+            {/* MOCKFORGE */}
+
+            <div className="project-card project-card-active">
               <div className="project-number">
                 01
               </div>
@@ -124,19 +126,49 @@ function App() {
               </div>
             </div>
 
-            <div className="project-card project-card-soon">
+
+            {/* GITGUIDE */}
+
+            <div className="project-card project-card-active">
               <div className="project-number">
                 02
               </div>
 
               <div className="project-name">
-                Coming soon
+                GitGuide
               </div>
 
               <div className="project-description">
-                Следующий проект уже скоро.
+                Интерактивный помощник по Git:
+                практические сценарии, команды
+                и понятные пояснения.
+              </div>
+
+              <div className="project-stack">
+                React · TypeScript · Vite · Clipboard API
+              </div>
+
+              <div className="project-links">
+                <a
+                  href="https://gitguide.arlekin-dev.ru/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live ↗
+                </a>
+
+                <a
+                  href="https://github.com/Arlekin20/GitGuide"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub ↗
+                </a>
               </div>
             </div>
+
+
+            {/* NEXT PROJECT */}
 
             <div className="project-card project-card-soon">
               <div className="project-number">
@@ -148,7 +180,7 @@ function App() {
               </div>
 
               <div className="project-description">
-                Здесь появится новый проект.
+                Здесь появится следующий проект.
               </div>
             </div>
           </div>

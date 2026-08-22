@@ -29,6 +29,22 @@ body {
   color: aliceblue;
 }
 
+
+/* КРАСИВОЕ ВЫДЕЛЕНИЕ ТЕКСТА */
+
+::selection {
+  background-color: #ccf900;
+  color: #202020;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: #ccf900;
+  color: #202020;
+  text-shadow: none;
+}
+
+
 button,
 input {
   font: inherit;

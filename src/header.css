@@ -36,6 +36,9 @@ a {
   gap: 22px;
 }
 
+
+/* LINKS */
+
 .link-button {
   position: relative;
 
@@ -56,7 +59,10 @@ a {
   transform: translateY(-3px);
 }
 
-.link-button:not(.link-HH):not(.link-git)::after {
+
+/* КРАСИВОЕ ПОДЧЁРКИВАНИЕ */
+
+.link-underline::after {
   content: "";
 
   position: absolute;
@@ -64,16 +70,23 @@ a {
   left: 0;
   bottom: -4px;
 
-  width: 0;
+  width: 100%;
   height: 2px;
 
   background-color: #ccf900;
 
-  transition: width 0.35s ease;
+  transform: scaleX(0);
+
+  transform-origin: right;
+
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.link-button:hover::after {
-  width: 100%;
+.link-underline:hover::after {
+  transform: scaleX(1);
+
+  transform-origin: left;
 }
 
 
@@ -99,7 +112,9 @@ a {
 }
 
 .link-HH:hover img {
-  transform: rotate(-8deg) scale(1.1);
+  transform:
+    rotate(-8deg)
+    scale(1.1);
 }
 
 
