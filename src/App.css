@@ -1,19 +1,135 @@
 body{margin:0 0 0 0}
-.hero-container {
+.all-site-setting{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.main-container{
+  display: flex;
+  min-height: 700px;
+  justify-content: space-between;
+  align-items: start;
+  gap: 80px;
+}
+.about-container{
+  margin-top: 250px;
+}
+.about-me{
+  
+  
+  border:2px dashed #ccf900;
+  padding: 22px;
+  
+}
+.blue-text{
   margin-left: 20px;
+}
+.myPortfolio{
+
+  top: 400px;
+}
+.about-me__p{
+  font-size: 50px;
+}
+.about-me__maintext{
+  font-size: 30px;
 }
 .myName {
   font-size: 75px;
+  color: #ccf900;font-weight: 500;
+  
 }
 .myDream {
   font-size: 50px;
 }
 .myStack-container {
   font-size: 37px;
+  
+}
+.myStack{
+  font-weight: 900;
 }
 .myPortfolio {
   font-size: 40px;
 }
 .habr-text {
   text-decoration: none;
+}
+.blue-box{
+  
+  z-index: -1;
+  min-width: 900px;
+  min-height: 250px;
+  background-color: #4260f6;
+  left: 0px;
+  top: 145px;
+}
+.link-git::before {
+  content: "";
+  position: absolute;
+
+  width: 48px;
+  height: 48px;
+
+  background: white;
+  border-radius: 50%;
+
+  top: 2px;
+  left: 1px;
+}
+.link-git {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  
+}
+.link-git img {
+  width: 50px;
+  height: 50px;
+
+  position: relative;
+  display: block;
+}
+.myPortfolio{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  
+}
+.git-container{
+  display: flex;gap: 10px;
+}
+.projects-container {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 60px;
+
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.project-card {
+  min-width: 300px;
+  min-height: 200px;
+
+  padding: 20px;
+
+  border: 2px solid #ccf900;
+  border-radius: 10px;
+
+  background-color: #363636;
+}
+.black{
+  
+  min-width: 120px;
+  min-height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
 }

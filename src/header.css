@@ -4,8 +4,8 @@ a {
 }
 
 .link-button {
-  background-color: #ffffff00;
-  border: 0px solid #ffffff00;
+  background-color: #3f3f3f;
+  border: 0px solid #3f3f3f;
   transition: 0.4s;
 }
 .link-button:hover {
@@ -42,20 +42,23 @@ a {
   align-items: center;
   justify-content: space-between;
 
-  background-color: #37373737;
+  background-color: #3f3f3f;
 }
 .number-text {
-  font-size: 40px;
-  min-height: 40px;
+  font-size: 25px;
+
 }
 .contacts-container {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
+
 .habr-text {
   font-size: 40px;
   min-height: 40px;
 }
+
 .tg-text {
   font-size: 40px;
   min-height: 40px;
@@ -65,4 +68,9 @@ a {
 }
 .project-text {
   font-size: 40px;
+}
+.link-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
