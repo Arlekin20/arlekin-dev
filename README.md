@@ -1,32 +1,114 @@
-# React + TypeScript + Vite
+# arlekin-dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Персональный сайт-портфолио frontend-разработчика.
 
-Currently, two official plugins are available:
+На сайте собрана информация обо мне, используемых технологиях, проектах и способах связи.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live:** https://arlekin-dev.ru
+**GitHub:** https://github.com/Arlekin20/arlekin-dev
 
-## React Compiler
+## О проекте
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Сайт создан как единая точка для знакомства с моими проектами и опытом.
 
-## Expanding the Oxlint configuration
+Основное направление — frontend-разработка на JavaScript, TypeScript и React.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+На сайте представлены мои проекты с возможностью сразу открыть работающую версию приложения или исходный код на GitHub.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Проекты
+
+### MockForge
+
+Конструктор mock API endpoints для frontend-разработки.
+
+**Stack:** React · TypeScript · Node.js · Express
+
+* Live: https://mockforge.arlekin-dev.ru
+* GitHub: https://github.com/Arlekin20/MockForge
+
+### GitGuide
+
+Интерактивный помощник по Git с практическими сценариями, командами и пояснениями.
+
+**Stack:** React · TypeScript · Vite · Clipboard API
+
+* Live: https://gitguide.arlekin-dev.ru
+* GitHub: https://github.com/Arlekin20/GitGuide
+
+## Стек сайта
+
+* JavaScript
+* TypeScript
+* React
+* HTML
+* CSS
+* Vite
+* Git / GitHub
+* GitHub Actions
+
+## Что реализовано
+
+* персональная страница разработчика;
+* блок с основным технологическим стеком;
+* секция с проектами;
+* ссылки на Live-версии проектов;
+* ссылки на GitHub;
+* ссылки на профессиональные профили и резюме;
+* контактная информация;
+* адаптивная верстка;
+* автоматический deployment.
+
+## Локальный запуск
+
+Клонировать репозиторий:
+
+```bash
+git clone https://github.com/Arlekin20/arlekin-dev.git
+cd arlekin-dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Установить зависимости:
+
+```bash
+npm install
+```
+
+Запустить проект:
+
+```bash
+npm run dev
+```
+
+## Сборка
+
+```bash
+npm run build
+```
+
+Проверка production build:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+Сайт размещён на собственном VPS.
+
+При push в ветку `main` GitHub Actions подключается к серверу по SSH и автоматически:
+
+1. получает последние изменения из репозитория;
+2. устанавливает зависимости;
+3. собирает production-версию приложения.
+
+Сайт доступен по адресу:
+
+https://arlekin-dev.ru
+
+## Автор
+
+**Александр Соловьев**
+
+Frontend-разработчик с фокусом на JavaScript, TypeScript и React.
+
+GitHub: https://github.com/Arlekin20
