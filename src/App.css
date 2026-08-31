@@ -91,8 +91,6 @@
 }
 
 
-/* GITHUB */
-
 .myPortfolio {
   margin-top: 30px;
 
@@ -159,7 +157,6 @@
 }
 
 
-/* GITHUB TEXT UNDERLINE */
 
 .gitName {
   position: relative;
@@ -195,7 +192,6 @@
 }
 
 
-/* ABOUT */
 
 .about-container {
   flex: 1;
@@ -244,9 +240,6 @@
   line-height: 1.35;
 }
 
-
-/* PROJECTS */
-
 .projects-section {
   padding: 40px 0 70px;
 }
@@ -263,11 +256,6 @@
   display: flex;
 
   gap: 20px;
-
-  /*
-    На компьютере overflow не ставим,
-    поэтому тени не обрезаются.
-  */
   overflow: visible;
 
   padding: 20px 5px 45px;
@@ -361,8 +349,6 @@
 }
 
 
-/* PROJECT LINKS */
-
 .project-links {
   margin-top: auto;
 
@@ -421,8 +407,6 @@
 }
 
 
-/* COMING SOON */
-
 .project-card-soon {
   opacity: 0.45;
 }
@@ -432,7 +416,6 @@
 }
 
 
-/* START ANIMATIONS */
 
 @keyframes show-from-left {
   from {
@@ -463,8 +446,6 @@
 }
 
 
-/* TABLET */
-
 @media (max-width: 1050px) {
   .main-container {
     flex-direction: column;
@@ -494,10 +475,7 @@
     padding-top: 70px;
   }
 
-  /*
-    Горизонтальный скролл нужен уже
-    только на узких экранах.
-  */
+
   .projects-container {
     overflow-x: auto;
 
@@ -521,7 +499,7 @@
 }
 
 
-/* MOBILE */
+
 
 @media (max-width: 650px) {
   .all-site-setting {

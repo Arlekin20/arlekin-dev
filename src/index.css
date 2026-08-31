@@ -29,9 +29,6 @@ body {
   color: aliceblue;
 }
 
-
-/* КРАСИВОЕ ВЫДЕЛЕНИЕ ТЕКСТА */
-
 ::selection {
   background-color: #ccf900;
   color: #202020;

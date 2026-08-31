@@ -18,17 +18,12 @@ function Header() {
       window.matchMedia("(pointer: coarse)").matches ||
       window.innerWidth <= 700;
 
-    /*
-      На телефоне href="tel:"
-      сам открывает звонок.
-    */
+
     if (isMobile) {
       return;
     }
 
-    /*
-      На компьютере копируем номер.
-    */
+
     event.preventDefault();
 
     try {

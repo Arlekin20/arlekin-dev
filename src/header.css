@@ -37,7 +37,7 @@ a {
 }
 
 
-/* LINKS */
+
 
 .link-button {
   position: relative;
@@ -60,7 +60,7 @@ a {
 }
 
 
-/* КРАСИВОЕ ПОДЧЁРКИВАНИЕ */
+
 
 .link-underline::after {
   content: "";
@@ -90,7 +90,6 @@ a {
 }
 
 
-/* HH */
 
 .link-HH {
   width: 40px;
@@ -118,7 +117,6 @@ a {
 }
 
 
-/* HEADER TEXT */
 
 .habr-text,
 .resume-text,
@@ -132,7 +130,7 @@ a {
 }
 
 
-/* TELEGRAM */
+
 
 .tg-container {
   display: flex;
@@ -175,7 +173,6 @@ a {
 }
 
 
-/* PHONE */
 
 .link-number {
   display: flex;
@@ -246,7 +243,6 @@ a {
 }
 
 
-/* HEADER START */
 
 @keyframes header-show {
   from {
@@ -263,7 +259,7 @@ a {
 }
 
 
-/* TABLET */
+
 
 @media (max-width: 1050px) {
   .preferred-contact {
@@ -310,7 +306,6 @@ a {
 }
 
 
-/* MOBILE */
 
 @media (max-width: 500px) {
   .button-container {
